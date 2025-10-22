@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-card">
+      <h2>To Do List</h2>
+      <label for="task">Tugas</label>
+      <input type="text" id="task" placeholder="Tulis tugas di sini..." />
+
+      <label for="date">Waktu Pengerjaan</label>
+      <input type="date" id="date" />
+
+      <label for="priority">Level Prioritas</label>
+      <select id="priority">
+        <option value="">- Pilih salah satu -</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <button id="save-btn">Simpan</button>
+    </div>
+
+    <div class="status-card">
+      <div class="badge">
+        <h3>To Do List<br>Done</h3>
+        <div id="progress">0/0</div>
+        <p>keep it up!!</p>
+      </div>
+    </div>
+
+    <div class="list-section">
+      <h3>To Do</h3>
+      <ul id="todo-list"></ul>
+
+      <h3>List Done</h3>
+      <ul id="done-list"></ul>
+    </div>
+
+    <button id="delete-all">Delete All</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
